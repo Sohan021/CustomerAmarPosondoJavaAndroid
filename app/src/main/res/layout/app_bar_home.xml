@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="360dp"
+    android:layout_gravity="center_horizontal"
+    android:layout_height="match_parent"
+    tools:context=".HomeActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="360dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="360dp"
+            android:layout_gravity="center_horizontal"
+            android:outlineAmbientShadowColor="@color/appclr"
+            app:subtitleTextColor="@color/appclr"
+            app:titleTextColor="@color/appclr"
+            android:outlineSpotShadowColor="@color/appclr"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@drawable/head"
+            app:popupTheme="@style/AppTheme.PopupOverlay"
+            />
+
+    </android.support.design.widget.AppBarLayout>
+
+    <include layout="@layout/content_home" />
+
+    <Button
+        android:id="@+id/fab"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:textColor="@color/appclr"
+        android:text="অর্ডার কনফার্ম করতে এখানে ক্লিক করুন"
+        android:layout_margin="@dimen/fab_margin"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:outlineAmbientShadowColor="#000000"
+        android:background="@drawable/border"
+        style="@style/Base.TextAppearance.AppCompat.Body1"
+         />
+
+</android.support.design.widget.CoordinatorLayout>

@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CartActivityUser">
+
+    <RelativeLayout
+        android:id="@+id/rl11"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/head"
+        style="@style/Base.TextAppearance.AppCompat.Body1"
+        android:layout_alignParentTop="true"
+        >
+        <TextView
+            android:id="@+id/total_price"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="মোট মূল্য:"
+            android:textColor="@color/appclr"
+            android:textSize="20sp"
+            android:textAlignment="center"
+            android:layout_marginTop="10dp"
+
+            />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/msg1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/appclr"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:textAlignment="center"
+        android:layout_centerVertical="true"
+        android:text="অর্ডারটি সম্পন্ন হয়েছে। খুব শীঘ্রই পন্যটি আপনার কাছে পৌছে যাবে। পন্যটি ডেলিভারি দেবার পরই আপনি নতুন করে অর্ডার করতে পারবেন। \n\n পন্য হাতে পাবার পর মুল্য পরিশোধ করুন। \n\n খুব শীঘ্রই বিকাশ এর মাধ্যমে মুল্য পরিশোধ এর সুযোগ এড হচ্ছে। \n\n ধন্যবাদ আমাদের সাথে থাকার জন্য☺"
+        android:textSize="20sp"
+        android:visibility="gone"
+
+
+        />
+
+
+    <Button
+
+        android:id="@+id/show_all_orderd_product"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:text="অর্ড়ার করা প্রডাক্টগুলি দেখতে এখানে ক্লিক করুন"
+        android:textColor="@color/appclr"
+        android:textAlignment="gravity"
+        android:textSize="20dp"
+        android:layout_margin="10dp"
+        android:background="@drawable/head"
+        style="@style/Base.TextAppearance.AppCompat.Body1"
+        />
+
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/cart_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/rl11"
+        android:layout_above="@id/next_process_btn"
+        >
+
+
+    </android.support.v7.widget.RecyclerView>
+
+
+
+
+    <Button
+
+        android:id="@+id/next_process_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:text="পরবর্তী ধাপ"
+        android:textColor="@color/appclr"
+        android:textSize="20dp"
+        android:layout_margin="10dp"
+        android:background="@drawable/border"
+        style="@style/Base.TextAppearance.AppCompat.Body1"
+        />
+
+</RelativeLayout>
